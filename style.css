@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    /*
+    min-height: 100vh;
+    background-image: url(images/BG.png) no-repeat top right , url(images/Phone.png);*/
+}
+/*Skoro element wypozycjonowany absolutnie zamyka miejsce, które wcześniej zajmował-jak odzyskać to miejsce żeby ułożyć w nim inne elementy?*/
+.conteiner {
+    margin: 40px 12px 15px 40px;
+    height: 850px;
+    width: 1348px;
+}
+
+.logo {
+    position: absolute;
+    z-index: 100;
+    width: 64px;
+    height: 17.83px;
+    left: 40px;
+    top: 53px; 
+}
+
+.bluebg {
+    position: absolute;
+    width: 440px;
+    height: 820px;
+    left: 920px;
+    top: 40px;
+}
+
+.phone {
+    position: absolute;
+    width: 523px;
+    height: 611px;
+    left: 865px;
+    top: 130px;
+}
+/* Dlaczego header nie reaguje na zmniejszanie tylko trzyma rozmiar całej szerokości contentu? */
+.header {
+    width: 50%; 
+}
+nav {
+    position: relative;
+    left: 260px;
+
+    width: 251px;
+}
+
+ul li a {
+    color: black;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 251px;
+
+    /*
+    top: 50px;
+    left: 260px;
+    
+    height: 24px;
+    */
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.item2 {
+    text-transform: uppercase;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.section {
+    width: 650px;
+    height: 190px;
+
+    padding-top: 258px;
+}
+
+h1 {
+    /*
+    margin-bottom: 15px;
+    Dlaczego nie działa tu dodanie marginesu dolnego (chciałam zepchnać w doł to co poniżej)? To się wiąże z tym, że pozycjonowanie absolutne zamknęło miejsce? Uzyskać miejsce na dole?
+    */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 95.47px;
+
+    color: #000000;
+}
+.bar {
+    /*
+    margin-left: 40px;
+    margin-right: 510px; */
+    margin-bottom: 15px;
+    
+    width: 850px;
+    height: 100px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.text {
+    font-size: 14px;
+    line-height: 19.6px;
+    opacity: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
